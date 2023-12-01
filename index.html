@@ -7,7 +7,7 @@
     <!-- displays site properly based on user's device -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | News homepage</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -23,48 +23,89 @@
 </head>
 
 <body>
+    <main>
+        <header>
+            <img class="logo-icon" src="/assets/images/logo.svg">
+            <nav>
+                <button class="nav-button">Home</button>
+                <button class="nav-button">New</button>
+                <button class="nav-button">Popular</button>
+                <button class="nav-button">Trending</button>
+                <button class="nav-button">Categories</button>
+            </nav>
+            <img class="menu-icon" src="/assets/images/icon-menu.svg">
+        </header>
+        <div class="container">
+            <div class="main-container">
+                <div class="left-container">
+                    <div class="img-container">
+                        <img class="img-desktop" src="/assets/images/image-web-3-desktop.jpg">
+                        <img class="img-mobile" src="/assets/images/image-web-3-mobile.jpg">
+                    </div>
+                    <div class="description">
+                        <h1 class="main-title">The Bright<br /> Future of <br />Web 3.0?</h1>
+                        <div class="paragraph">
+                            <div class="paragraph-detail">
+                                We dive into the next evolution of the web that <br />claims to put the power of the
+                                platforms
+                                back <br />
+                                into the hands of the people. But is it really<br /> fulfilling its promise?
+                            </div>
+                            <button class="paragraph-button">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <h1 class="new-main-title">New</h1>
+                    <div class="new-box">
+                        <h1 class="new-title">Hydrogen VS Electric Cars</h1>
+                        Will hydrogen-fueled cars ever catch up to EVs?
+                    </div>
+                    <hr class="underline">
+                    <div class="new-box">
+                        <h1 class="new-title">The Downsides of AI Artistry</h1>
+                        What are the possible adverse effects of on-demand AI image generation?
+                    </div>
+                    <hr class="underline">
+                    <div class="new-box">
+                        <h1 class="new-title">Is VC Funding Drying Up?</h1>
+                        Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-box">
+                    <img class="footer-img" src="/assets/images/image-retro-pcs.jpg">
+                    <div class="footer-detail">
+                        <div class="big-num">01</div>
+                        <div class="footer-title">Reviving Retro PCs</div>
+                        <div class="footer-paragraph">What happens when old PCs <br />are given modern upgrades?</div>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <img class="footer-img" src="/assets/images/image-top-laptops.jpg">
+                    <div class="footer-detail">
+                        <div class="big-num">02</div>
+                        <div class="footer-title">Top 10 Laptops of 2022</div>
+                        <div class="footer-paragraph">Our best picks for various <br /> needs and budgets.</div>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <img class="footer-img" src="/assets/images/image-gaming-growth.jpg">
+                    <div class="footer-detail">
+                        <div class="big-num">03</div>
+                        <div class="footer-title">The Growth of Gaming</div>
+                        <div class="footer-paragraph">How the pandemic has sparked<br /> fresh opportunities.</div>
+                    </div>
+                </div>
+            </footer>
 
-    Home
-    New
-    Popular
-    Trending
-    Categories
-
-    The Bright Future of Web 3.0?
-
-    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the
-    people.
-    But is it really fulfilling its promise?
-
-    Read more
-
-    New
-
-    Hydrogen VS Electric Cars
-    Will hydrogen-fueled cars ever catch up to EVs?
-
-    The Downsides of AI Artistry
-    What are the possible adverse effects of on-demand AI image generation?
-
-    Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-    01
-    Reviving Retro PCs
-    What happens when old PCs are given modern upgrades?
-
-    02
-    Top 10 Laptops of 2022
-    Our best picks for various needs and budgets.
-
-    03
-    The Growth of Gaming
-    How the pandemic has sparked fresh opportunities.
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="#">thanwa lokwattanakul</a>.
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
