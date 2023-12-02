@@ -36,7 +36,7 @@ nav {
 }
 @media only screen and (max-width: 375px) {
   header {
-    padding: 25px;
+    padding: 25px 0px;
   }
   .container {
     width: auto;
@@ -63,19 +63,20 @@ nav {
 }
 .description {
   display: flex;
-  gap: 20px;
+  justify-content: space-around;
 }
 .main-title {
   color: hsl(240, 100%, 5%);
   line-height: 1;
   font-size: 55px;
   font-weight: 800;
-  width: 50%;
+  width: 372.19px;
 }
 .paragraph {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 340.5px;
 }
 .paragraph-detail {
   font-size: 15px;
@@ -123,12 +124,38 @@ nav {
 @media only screen and (max-width: 375px) {
   .main-container {
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
   }
   .left-container {
     flex-direction: column;
+    width: 100%;
+  }
+  .main-title {
+    font-size: 40px;
+    width: 100%;
   }
   .description {
     flex-direction: column;
+    width: 100%;
+  }
+  .paragraph-detail {
+    font-size: 15px;
+    width: 335px;
+  }
+  .paragraph-button {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+  .right-container {
+    width: 100%;
   }
 }
 /* ---------------------------------------------------------------------- */
@@ -137,6 +164,11 @@ footer {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+.footer-box-img {
+  display: flex;
+  height: 115px;
+  gap: 20px;
 }
 .footer-box {
   display: flex;
@@ -163,6 +195,33 @@ footer {
 @media only screen and (max-width: 375px) {
   footer {
     flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+  .footer-box {
+    height: 180px;
+    width: 375px;
+    align-items: center;
+  }
+  .footer-box-img {
+    height: 180px;
+    width: fit-content;
+  }
+  .footer-detail {
+    width: 197px;
+  }
+  .footer-img {
+    display: block;
+  }
+  .footer-title {
+    line-height: 2;
+  }
+  .footer-paragraph {
+    font-size: 12px;
   }
 }
 /* ---------------------------------------------------------------------- */
